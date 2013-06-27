@@ -374,8 +374,9 @@
     number = isNaN(number) ? 0 : number;
     var sign = number < 0 ? '-' : '';
     number = Math.abs(number);
+    var tens = number % 100;
 
-    return sign + number + (number > 4 && number < 21 ? 'th' : {1: 'st', 2: 'nd', 3: 'rd'}[number % 10] || 'th');
+    return sign + number + (tens > 4 && tens < 21 ? 'th' : {1: 'st', 2: 'nd', 3: 'rd'}[number % 10] || 'th');
   };
 
   /**
@@ -392,8 +393,8 @@
     if (filesize <= 0) { return '0 bytes'; }
 
     var thresholds = [1];
-    var units = ['bytes', 'Kb', 'Mb', 'Gb', 'Tb', 'Pb'];
-    if (filesize < kilo) { return humanize.numberFormat(filesize, 0) + ' ' + units[0]; }
+    var units = [' Bytes', 'KB', 'MB', 'GB', 'TB', 'PB'];
+    if (filesize < kilo) { return humanize.numberFormat(filesize, 0) + units[0]; }
 
     for (var i = 1; i < units.length; i++) {
       thresholds[i] = thresholds[i-1] * kilo;
