@@ -7,13 +7,13 @@
     "client",
     "browser"
   ],
-  "author": {
-    "name": "Tai-Jin Lee",
-    "email": "taijin@gmail.com"
-  },
+  // "author": {
+  //   "name": "Tai-Jin Lee",
+  //   "email": "taijin@gmail.com"
+  // },
   "repository": {
     "type": "git",
-    "url": "git://github.com/taijinlee/humanize.git"
+    "url": "https://github.com/highspot/humanize.git"
   },
   "main": "humanize.js",
   "version": "0.0.6",
