@@ -1,7 +1,10 @@
 {
   "name": "humanize",
+  "version": "0.0.6",
   "description": "Javascript string formatter for human readability",
-  "homepage": "https://github.com/taijinlee/humanize",
+
+  // "homepage": "https://github.com/taijinlee/humanize",
+
   "keywords": [
     "util",
     "client",
@@ -17,7 +20,7 @@
   },
   "main": "humanize.js",
   "version": "0.0.6",
-  // "dependencies": {},
+  "dependencies": {},
   "devDependencies": {
     "mocha": "1.0.3",
     "should": "0.6.3",
